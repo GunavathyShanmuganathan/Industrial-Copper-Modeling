@@ -24,14 +24,23 @@ Model GUI: Using streamlit module, created interactive page with
    
 **Libraries used:**
 import pandas as pd
+
 import numpy as np
+
 from sklearn.model_selection import train_test_split
+
 from sklearn.tree import DecisionTreeRegressor
+
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
+
 from sklearn.metrics import mean_squared_error
+
 from sklearn.model_selection import GridSearchCV
+
 from sklearn.preprocessing import LabelBinarizer
+
 import streamlit as st
+
 import re
 
 **Installation:**
