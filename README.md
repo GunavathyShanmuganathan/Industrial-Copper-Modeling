@@ -1,8 +1,9 @@
 # Industrial-Copper-Modeling
-Problem Statement:
+**Problem Statement:**
     The copper industry deals with less complex data related to sales and pricing. However, this data may suffer from issues such as skewness and noisy data, which can affect the accuracy of manual predictions. Dealing with these challenges manually can be time-consuming and may not result in optimal pricing decisions. A machine learning regression model can address these issues by utilizing advanced techniques such as data normalization, feature scaling, and outlier detection, and leveraging algorithms that are robust to skewed and noisy data. 
     Another area where the copper industry faces challenges is in capturing the leads. A lead classification model is a system for evaluating and classifying leads based on how likely they are to become a customer . You can use the STATUS variable with WON being considered as Success and LOST being considered as Failure and remove data points other than WON, LOST STATUS values.
-Approach: 
+
+**Approach:** 
 Data Understanding: Identify the types of variables (continuous, categorical) and their distributions. Some rubbish values are present in ‘Material_Reference’ which starts with ‘00000’ value which should be converted into null.
 Data Preprocessing: 
 Handle missing values with mean/median/mode.
@@ -20,7 +21,8 @@ Same steps for Regression modelling.Decision Tree Regressor is used.
 Model GUI: Using streamlit module, created interactive page with
    (1) task input( Regression or Classification) and 
    (2) In input field where you can enter each column value except ‘Selling_Price’ for regression model and  except ‘Status’ for classification model. 
-Libraries used:
+   
+**Libraries used:**
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -31,5 +33,6 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import LabelBinarizer
 import streamlit as st
 import re
-Installation:
+
+**Installation:**
   To use sklearn package we have to install pip install -U scikit-learn
